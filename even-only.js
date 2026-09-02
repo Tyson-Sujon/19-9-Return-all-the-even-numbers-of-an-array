@@ -5,13 +5,21 @@
  */
 
 function evenNum(num1) {
+  let add = [];
   for (const element of num1) {
-    let add = [];
-    console.log(element);
     if (element % 2 === 0) {
-      add = element.unshift();
+      //   let x = add.push();
+      add.push(element);
     }
   }
+  return add;
 }
 
 const number = evenNum([12, 3, 44, 5, 64, 31, 42]);
+
+console.log(number);
+
+/**return the sum of even numbers */
+function addEven(num1) {}
+
+addEven([2, 4, 3, 6, 8, 9, 7, 5, 0]);
